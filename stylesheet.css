@@ -1,0 +1,1550 @@
+/*Main Stuff*/
+body, html {
+  height: 100%;
+  margin:auto;
+}
+/*Main Stuff END*/
+
+/* Responsive*/
+
+/* inbetween those*/
+@media only screen and (min-width:375px) and (max-width:814px){
+  /* Navbar*/
+  #navbar {
+  background-color: rgba(0,0,0,0.2);
+  top: 0;
+  z-index:3;
+  text-align: center;
+    backdrop-filter: blur(5px);
+  width: 100vw;
+  display: inline-block;
+  transition: top 0.4s;
+  position:fixed;
+  }
+
+  #navbar a {
+  float: center;
+  display: inline-block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 15px;
+  text-decoration: none;
+  font-size: 17px;
+  }
+
+  #navbar a:hover {
+  background-color: rgba(0,0,0,0.4);
+  #f2f2f2;
+  }
+  .dropdown {
+    position: center;
+    display: ;
+    color: white;
+  }
+  .dropdown-content {
+    display: none;
+    float: center;
+    position: center;
+  }
+  .dropdown:hover .dropdown-content {
+    display: block;
+    position: center;
+  }
+
+
+
+  /* Animation im Logo */
+  .Animate{
+    visibility: visible;
+    color: white;
+    max-height: 320px;
+    font-weight: bold;
+    border: 2px solid blank;
+    border-radius: 5px;
+    background-color: rgba(0,0,0,0.2);
+    backdrop-filter: blur(2px);
+    position: absolute;
+    top: 70vh;
+    left: 50vw;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 45vw;
+    padding: 20px;
+    text-align: center;
+  letter-spacing:2px;
+  text-decoration:none;
+
+  overflow:hidden;
+  }
+  .Animate:before
+  {
+  content: '';
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  bottom: 2px;
+  width: 50%;
+  background: rgba(255,255,255,0.05);
+  }
+  .Animate span:nth-child(1)
+  {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(to right,#005296,#000000);
+  animation: animate1 2s linear infinite;
+  }
+  @keyframes animate1
+  {
+   0%
+   {
+     transform:translateX(-100%);
+
+   }
+   100%
+   {
+     transform:translateX(100%);
+
+   }
+  }
+  .Animate span:nth-child(2)
+  {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(to bottom,#005296,#000000);
+  animation: animate2 2s linear infinite;
+  animation-delay: 1s;
+  }
+  @keyframes animate2
+  {
+   0%
+   {
+     transform:translateY(-100%);
+
+   }
+   100%
+   {
+     transform:translateY(100%);
+
+   }
+  }
+  .Animate span:nth-child(3)
+  {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(to left,#005296,#000000);
+  animation: animate3 2s linear infinite;
+  }
+  @keyframes animate3
+  {
+   0%
+   {
+     transform:translateX(100%);
+
+   }
+   100%
+   {
+     transform:translateX(-100%);
+
+   }
+  }
+  .Animate span:nth-child(4)
+  {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(to top,#005296,#000000);
+  animation: animate4 2s linear infinite;
+  animation-delay: 1s;
+  }
+  @keyframes animate4
+  {
+   0%
+   {
+     transform:translateY(100%);
+
+   }
+   100%
+   {
+     transform:translateY(-100%);
+
+   }
+  }
+  /*Animation END*/
+
+  /* Box im Blog*/
+  .greyBox{
+   color: white;
+   background-color:#282E33;
+   text-align:center;
+   padding:30px 80px;
+   text-align: justify;
+   max-width: 100vw;
+   max-height: 120vh;
+  }
+  /* Box im Blog END*/
+
+  /* Ewyn Seite*/
+  .Formular{
+  color: white;
+  background-color:#282E33;
+  text-align:center;
+  padding:30px 80px;
+  text-align: justify;
+  max-width: 100vw;
+  max-height: 146vh;
+  }
+  /* Ewyn Seite END*/
+
+  /* Haru Seite*/
+  .Formular2{
+  color: white;
+  background-color:#282E33;
+  text-align:center;
+  padding:30px 80px;
+  text-align: justify;
+  max-width: 100vw;
+  max-height: 167vh;
+  }
+  /*Haru Seite END*/
+  }
+
+  /*Iphone x (portrait) ----------- */
+  @media only screen and (max-width : 375px) {
+    /* Navbar*/
+    #navbar {
+    background-color: rgba(0,0,0,0.2);;
+    top: 0;
+    z-index:3;
+    text-align: center;
+    width: 100vw;
+      backdrop-filter: blur(5px);
+    display: inline-block;
+    transition: top 0.4s;
+    position:fixed;
+    }
+
+    #navbar a {
+    float: center;
+    display: inline-block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 15px;
+    text-decoration: none;
+    font-size: 17px;
+    }
+
+    #navbar a:hover {
+    background-color: rgba(0,0,0,0.4);
+    #f2f2f2;
+    }
+    .dropdown {
+      position: center;
+      display: ;
+      color: white;
+    }
+    .dropdown-content {
+      display: none;
+      float: center;
+      position: center;
+    }
+    .dropdown:hover .dropdown-content {
+      display: block;
+      position: center;
+    }
+    /* Animation im Logo */
+    .Animate{
+      visibility: visible;
+      color: white;
+      max-height: 320px;
+      font-weight: bold;
+      border: 2px solid blank;
+      border-radius: 5px;
+      background-color: rgba(0,0,0,0.2);
+      backdrop-filter: blur(2px);
+      position: absolute;
+      top: 50vh;
+      left: 50vw;
+      transform: translate(-50%, -50%);
+      z-index: 2;
+      width: 45vw;
+      padding: 20px;
+      text-align: center;
+    letter-spacing:2px;
+    text-decoration:none;
+
+    overflow:hidden;
+    }
+    .Animate:before
+    {
+    content: '';
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    bottom: 2px;
+    width: 50%;
+    background: rgba(255,255,255,0.05);
+    }
+    .Animate span:nth-child(1)
+    {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(to right,#005296,#000000);
+    animation: animate1 2s linear infinite;
+    }
+    @keyframes animate1
+    {
+     0%
+     {
+       transform:translateX(-100%);
+
+     }
+     100%
+     {
+       transform:translateX(100%);
+
+     }
+    }
+    .Animate span:nth-child(2)
+    {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(to bottom,#005296,#000000);
+    animation: animate2 2s linear infinite;
+    animation-delay: 1s;
+    }
+    @keyframes animate2
+    {
+     0%
+     {
+       transform:translateY(-100%);
+
+     }
+     100%
+     {
+       transform:translateY(100%);
+
+     }
+    }
+    .Animate span:nth-child(3)
+    {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(to left,#005296,#000000);
+    animation: animate3 2s linear infinite;
+    }
+    @keyframes animate3
+    {
+     0%
+     {
+       transform:translateX(100%);
+
+     }
+     100%
+     {
+       transform:translateX(-100%);
+
+     }
+    }
+    .Animate span:nth-child(4)
+    {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(to top,#005296,#000000);
+    animation: animate4 2s linear infinite;
+    animation-delay: 1s;
+    }
+    @keyframes animate4
+    {
+     0%
+     {
+       transform:translateY(100%);
+
+     }
+     100%
+     {
+       transform:translateY(-100%);
+
+     }
+    }
+    /*Animation END*/
+
+    /* Box im Blog*/
+    .greyBox{
+     color: white;
+     background-color:#282E33;
+     text-align:center;
+     padding:30px 80px;
+     text-align: justify;
+     max-width: 100vw;
+     max-height: 110vh;
+    }
+    /* Box im Blog END*/
+
+    /* Ewyn Seite*/
+    .Formular{
+    color: white;
+    background-color:#282E33;
+    text-align:center;
+    padding:30px 80px;
+    text-align: justify;
+    max-width: 100vw;
+    max-height: 75vh;
+    }
+    /* Ewyn Seite END*/
+
+    /* Haru Seite*/
+    .Formular2{
+    color: white;
+    background-color:#282E33;
+    text-align:center;
+    padding:30px 80px;
+    text-align: justify;
+    max-width: 100vw;
+    max-height: 93vh;
+    }
+    /*Haru Seite END*/
+
+
+}
+/* inbetween those*/
+
+/*Iphone x (portrait) ----------- */
+@media only screen and (max-width : 375px) {
+  /* Navbar*/
+  #navbar {
+  background-color: rgba(0,0,0,0.2);;
+  z-index:3;
+  top: 0;
+  text-align: center;
+  z-index:3;
+  width: 100vw;
+    backdrop-filter: blur(5px);
+  display: inline-block;
+  transition: top 0.4s;
+  position:fixed;
+  }
+
+  #navbar a {
+  float: center;
+  display: inline-block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 15px;
+  text-decoration: none;
+  font-size: 17px;
+  }
+
+  #navbar a:hover {
+  background-color: rgba(0,0,0,0.4);
+  #f2f2f2;
+  }
+  .dropdown {
+    position: center;
+    display: ;
+    color: white;
+  }
+  .dropdown-content {
+    display: none;
+    float: center;
+    position: center;
+  }
+  .dropdown:hover .dropdown-content {
+    display: block;
+    position: center;
+  }
+  /* Animation im Logo */
+  .Animate{
+    visibility: visible;
+    color: white;
+    max-height: 320px;
+    font-weight: bold;
+    border: 2px solid blank;
+    border-radius: 5px;
+    background-color: rgba(0,0,0,0.2);
+    backdrop-filter: blur(2px);
+    position: absolute;
+    top: 50vh;
+    left: 50vw;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 45vw;
+    padding: 20px;
+    text-align: center;
+  letter-spacing:2px;
+  text-decoration:none;
+
+  overflow:hidden;
+  }
+  .Animate:before
+  {
+  content: '';
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  bottom: 2px;
+  width: 50%;
+  background: rgba(255,255,255,0.05);
+  }
+  .Animate span:nth-child(1)
+  {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(to right,#005296,#000000);
+  animation: animate1 2s linear infinite;
+  }
+  @keyframes animate1
+  {
+   0%
+   {
+     transform:translateX(-100%);
+
+   }
+   100%
+   {
+     transform:translateX(100%);
+
+   }
+  }
+  .Animate span:nth-child(2)
+  {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(to bottom,#005296,#000000);
+  animation: animate2 2s linear infinite;
+  animation-delay: 1s;
+  }
+  @keyframes animate2
+  {
+   0%
+   {
+     transform:translateY(-100%);
+
+   }
+   100%
+   {
+     transform:translateY(100%);
+
+   }
+  }
+  .Animate span:nth-child(3)
+  {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(to left,#005296,#000000);
+  animation: animate3 2s linear infinite;
+  }
+  @keyframes animate3
+  {
+   0%
+   {
+     transform:translateX(100%);
+
+   }
+   100%
+   {
+     transform:translateX(-100%);
+
+   }
+  }
+  .Animate span:nth-child(4)
+  {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(to top,#005296,#000000);
+  animation: animate4 2s linear infinite;
+  animation-delay: 1s;
+  }
+  @keyframes animate4
+  {
+   0%
+   {
+     transform:translateY(100%);
+
+   }
+   100%
+   {
+     transform:translateY(-100%);
+
+   }
+  }
+  /*Animation END*/
+
+  /* Box im Blog*/
+  .greyBox{
+   color: white;
+   background-color:#282E33;
+   text-align:center;
+   padding:30px 80px;
+   text-align: justify;
+   max-width: 100vw;
+   max-height: 110vh;
+  }
+  /* Box im Blog END*/
+
+  /* Ewyn Seite*/
+  .Formular{
+  color: white;
+  background-color:#282E33;
+  text-align:center;
+  padding:30px 80px;
+  text-align: justify;
+  max-width: 100vw;
+  max-height: 75vh;
+  }
+  /* Ewyn Seite END*/
+
+  /* Haru Seite*/
+  .Formular2{
+  color: white;
+  background-color:#282E33;
+  text-align:center;
+  padding:30px 80px;
+  text-align: justify;
+  max-width: 100vw;
+  max-height: 93vh;
+  }
+  /*Haru Seite END*/
+}
+
+
+/* iPads (landscape) ----------- */
+@media only screen and (min-device-width : 813px) and (max-device-width : 1024px) and (orientation : landscape) {
+
+  /* Navbar*/
+  #navbar {
+    broder-radius:2px;
+    top: 0;
+    margin:auto;
+    z-index:3;
+    background-color: rgba(0,0,0,0.2);
+    backdrop-filter: blur(5px);
+    border-radius: 5px;
+    position:fixed;
+    left:0;
+    right:0;
+    text-align: center;
+    width: 40vw;
+    display: block;
+    transition: top 0.6s;
+  }
+  #navbar a {
+    float: center;
+    display: inline-block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 15px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  #navbar a:hover {
+    background-color: rgba(56,111,164,0.3);
+    #f2f2f2;
+  }
+  /*Dropdown*/
+  .dropdown {
+    position: center;
+    display: ;
+    color: white;
+  }
+  .dropdown-content {
+    display: none;
+    float: center;
+    position: center;
+  }
+  .dropdown:hover .dropdown-content {
+    display: block;
+    position: center;
+  }
+  /*Dropdown END*/
+
+  /* Navbar END*/
+
+  /* Animation im Logo */
+  .Animate{
+    visibility: visible;
+    color: white;
+    max-height: 320px;
+    font-weight: bold;
+    border: 2px solid blank;
+    border-radius: 5px;
+    background-color: rgba(0,0,0,0.2);
+    backdrop-filter: blur(2px);
+    position: absolute;
+    top: 50vh;
+    left: 50vw;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 45vw;
+    padding: 20px;
+    text-align: center;
+  letter-spacing:2px;
+  text-decoration:none;
+
+  overflow:hidden;
+  }
+  .Animate:before
+  {
+  content: '';
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  bottom: 2px;
+  width: 50%;
+  background: rgba(255,255,255,0.05);
+  }
+  .Animate span:nth-child(1)
+  {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(to right,#005296,#000000);
+  animation: animate1 2s linear infinite;
+  }
+  @keyframes animate1
+  {
+   0%
+   {
+     transform:translateX(-100%);
+
+   }
+   100%
+   {
+     transform:translateX(100%);
+
+   }
+  }
+  .Animate span:nth-child(2)
+  {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(to bottom,#005296,#000000);
+  animation: animate2 2s linear infinite;
+  animation-delay: 1s;
+  }
+  @keyframes animate2
+  {
+   0%
+   {
+     transform:translateY(-100%);
+
+   }
+   100%
+   {
+     transform:translateY(100%);
+
+   }
+  }
+  .Animate span:nth-child(3)
+  {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(to left,#005296,#000000);
+  animation: animate3 2s linear infinite;
+  }
+  @keyframes animate3
+  {
+   0%
+   {
+     transform:translateX(100%);
+
+   }
+   100%
+   {
+     transform:translateX(-100%);
+
+   }
+  }
+  .Animate span:nth-child(4)
+  {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(to top,#005296,#000000);
+  animation: animate4 2s linear infinite;
+  animation-delay: 1s;
+  }
+  @keyframes animate4
+  {
+   0%
+   {
+     transform:translateY(100%);
+
+   }
+   100%
+   {
+     transform:translateY(-100%);
+
+   }
+  }
+  /*Animation END*/
+
+  /* Box im Blog*/
+  .greyBox{
+   color: white;
+   background-color:#282E33;
+   text-align:center;
+   padding:30px 80px;
+   text-align: justify;
+   max-width: 100vw;
+   max-height: 93vh;
+  }
+  /* Box im Blog END*/
+
+  /* Ewyn Seite*/
+  .Formular{
+  color: white;
+  background-color:#282E33;
+  text-align:center;
+  padding:30px 80px;
+  text-align: justify;
+  max-width: 100vw;
+  max-height: 75vh;
+  }
+  /* Ewyn Seite END*/
+
+  /* Haru Seite*/
+  .Formular2{
+  color: white;
+  background-color:#282E33;
+  text-align:center;
+  padding:30px 80px;
+  text-align: justify;
+  max-width: 100vw;
+  max-height: 84vh;
+  }
+  /*Haru Seite END*/
+
+}
+
+/* iPads (portrait) ----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
+
+  /* Navbar*/
+  #navbar {
+    broder-radius:2px;
+    top: 0;
+    margin:auto;
+    z-index:3;
+    background-color: rgba(0,0,0,0.2);
+    backdrop-filter: blur(5px);
+    border-radius: 5px;
+    position:fixed;
+    left:0;
+    right:0;
+    text-align: center;
+    width: 40vw;
+    display: block;
+    transition: top 0.6s;
+  }
+  #navbar a {
+    float: center;
+    display: inline-block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 15px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  #navbar a:hover {
+    background-color: rgba(56,111,164,0.3);
+    #f2f2f2;
+  }
+  /*Dropdown*/
+  .dropdown {
+    position: center;
+    display: ;
+    color: white;
+  }
+  .dropdown-content {
+    display: none;
+    float: center;
+    position: center;
+  }
+  .dropdown:hover .dropdown-content {
+    display: block;
+    position: center;
+  }
+/*Dropdown END*/
+
+  /* Navbar END*/
+
+  /* Animation im Logo */
+  .Animate{
+    visibility: visible;
+    color: white;
+    max-height: 320px;
+    font-weight: bold;
+    border: 2px solid blank;
+    border-radius: 5px;
+    background-color: rgba(0,0,0,0.2);
+    backdrop-filter: blur(2px);
+    position: absolute;
+    top: 50vh;
+    left: 50vw;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 45vw;
+    padding: 20px;
+    text-align: center;
+  letter-spacing:2px;
+  text-decoration:none;
+  overflow:hidden;
+  }
+  .Animate:before{
+  content: '';
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  bottom: 2px;
+  width: 50%;
+  background: rgba(255,255,255,0.05);
+  }
+  .Animate span:nth-child(1){
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(to right,#005296,#000000);
+  animation: animate1 2s linear infinite;
+  }
+  @keyframes animate1{
+   0%
+   {
+     transform:translateX(-100%);
+
+   }
+   100%
+   {
+     transform:translateX(100%);
+
+   }
+  }
+  .Animate span:nth-child(2){
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(to bottom,#005296,#000000);
+  animation: animate2 2s linear infinite;
+  animation-delay: 1s;
+  }
+  @keyframes animate2
+  {
+   0%
+   {
+     transform:translateY(-100%);
+
+   }
+   100%
+   {
+     transform:translateY(100%);
+
+   }
+  }
+  .Animate span:nth-child(3)
+  {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(to left,#005296,#000000);
+  animation: animate3 2s linear infinite;
+  }
+  @keyframes animate3
+  {
+   0%
+   {
+     transform:translateX(100%);
+
+   }
+   100%
+   {
+     transform:translateX(-100%);
+
+   }
+  }
+  .Animate span:nth-child(4)
+  {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(to top,#005296,#000000);
+  animation: animate4 2s linear infinite;
+  animation-delay: 1s;
+  }
+  @keyframes animate4
+  {
+   0%
+   {
+     transform:translateY(100%);
+
+   }
+   100%
+   {
+     transform:translateY(-100%);
+
+   }
+  }
+/*Animation END*/
+
+/* Box im Blog*/
+  .greyBox{
+   color: white;
+   background-color:#282E33;
+   text-align:center;
+   padding:30px 80px;
+   text-align: justify;
+   max-width: 100vw;
+   max-height: 85vh;
+  }
+/* Box im Blog END*/
+
+/* Ewyn Seite*/
+  .Formular{
+  color: white;
+  background-color:#282E33;
+  text-align:center;
+  padding:30px 80px;
+  text-align: justify;
+  max-width: 100vw;
+  max-height: 55vh;
+  }
+/* Ewyn Seite END*/
+
+/* Haru Seite*/
+  .Formular2{
+  color: white;
+  background-color:#282E33;
+  text-align:center;
+  padding:30px 80px;
+  text-align: justify;
+  max-width: 100vw;
+  max-height: 65vh;
+  }
+/*Haru Seite END*/
+
+
+}
+
+
+/* Desktops and laptops ----------- */
+@media only screen  and (min-width : 1224px) {
+  /* Navbar*/
+  #navbar {
+    broder-radius:2px;
+    z-index:3;
+    top: 0;
+    margin:auto;
+    background-color: rgba(0,0,0,0.2);
+    backdrop-filter: blur(5px);
+    border-radius: 5px;
+    position:fixed;
+    left:0;
+    right:0;
+    text-align: center;
+    width: 40vw;
+    display: block;
+    transition: top 0.6s;
+  }
+  #navbar a {
+    float: center;
+    display: inline-block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 15px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  #navbar a:hover {
+    background-color: rgba(56,111,164,0.3);
+    #f2f2f2;
+  }
+  /*Dropdown*/
+  .dropdown {
+    position: center;
+    display: ;
+    color: white;
+  }
+  .dropdown-content {
+    display: none;
+    float: center;
+    position: center;
+  }
+  .dropdown:hover .dropdown-content {
+    display: block;
+    position: center;
+  }
+/*Dropdown END*/
+
+  /* Navbar END*/
+
+  /* Animation im Logo */
+  .Animate{
+    visibility: visible;
+    color: white;
+    max-height: 320px;
+    font-weight: bold;
+    border: 2px solid blank;
+    border-radius: 5px;
+    background-color: rgba(0,0,0,0.2);
+    backdrop-filter: blur(2px);
+    position: absolute;
+    top: 50vh;
+    left: 50vw;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 45vw;
+    padding: 20px;
+    text-align: center;
+  letter-spacing:2px;
+  text-decoration:none;
+
+  overflow:hidden;
+  }
+  .Animate:before
+  {
+  content: '';
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  bottom: 2px;
+  width: 50%;
+  background: rgba(255,255,255,0.05);
+  }
+  .Animate span:nth-child(1)
+  {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(to right,#005296,#000000);
+  animation: animate1 2s linear infinite;
+  }
+  @keyframes animate1
+  {
+   0%
+   {
+     transform:translateX(-100%);
+
+   }
+   100%
+   {
+     transform:translateX(100%);
+
+   }
+  }
+  .Animate span:nth-child(2)
+  {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(to bottom,#005296,#000000);
+  animation: animate2 2s linear infinite;
+  animation-delay: 1s;
+  }
+  @keyframes animate2
+  {
+   0%
+   {
+     transform:translateY(-100%);
+
+   }
+   100%
+   {
+     transform:translateY(100%);
+
+   }
+  }
+  .Animate span:nth-child(3)
+  {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(to left,#005296,#000000);
+  animation: animate3 2s linear infinite;
+  }
+  @keyframes animate3
+  {
+   0%
+   {
+     transform:translateX(100%);
+
+   }
+   100%
+   {
+     transform:translateX(-100%);
+
+   }
+  }
+  .Animate span:nth-child(4)
+  {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(to top,,#000000);
+  animation: animate4 2s linear infinite;
+  animation-delay: 1s;
+  }
+  @keyframes animate4
+  {
+   0%
+   {
+     transform:translateY(100%);
+
+   }
+   100%
+   {
+     transform:translateY(-100%);
+
+   }
+  }
+/*Animation END*/
+
+/* Box im Blog*/
+  .greyBox{
+   color: white;
+   background-color:#282E33;
+   text-align:center;
+   padding:30px 80px;
+   text-align: justify;
+   max-width: 100vw;
+   max-height: 85vh;
+  }
+/* Box im Blog END*/
+
+/* Ewyn Seite*/
+  .Formular{
+  color: white;
+  background-color:#282E33;
+  text-align:center;
+  padding:30px 80px;
+  text-align: justify;
+  max-width: 100vw;
+  max-height: 65vh;
+  }
+/* Ewyn Seite END*/
+
+/* Haru Seite*/
+  .Formular2{
+  color: white;
+  background-color:#282E33;
+  text-align:center;
+  padding:30px 80px;
+  text-align: justify;
+  max-width: 100vw;
+  max-height: 70vh;
+  }
+/*Haru Seite END*/
+}
+
+/*Responsive PC and Laptop END*/
+
+/* Responsive END*/
+
+/*parallax*/
+.parallax1 {
+  /* Bild im Hintergrund */
+  background-image: url('parallax5.jpg');
+
+  /* Größe des Bilds */
+  height: 100%;
+
+  /* Der Parralax Effekt */
+    background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  max-width: 100vw;
+}
+
+.parallax3 {
+  /* Bild im Hintergrund */
+  background-image: url('parallax7.jpg');
+
+  /* Größe des Bilds */
+  height: 50%;
+
+  /* Der Parralax Effekt */
+    background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  max-width: 100vw;
+}
+
+.parallax2 {
+  /* Bild im Hintergrund */
+    background-image: url('parallax8.jpg');
+
+  /* Größe des Bildes */
+  height: 90vh;
+
+  /* Der Parallax Effekt */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  max-width: 100vw;
+}
+
+
+/* responsive test*/
+@media only screen and (max-device-width: 1366px) {
+  .parallax {
+    background-attachment: fixed;
+  }
+}
+
+/* responsive END*/
+
+
+/* Artikel */
+.header{
+  text-align:center;
+}
+.Artikel {
+display: grid;
+grid-template-columns: 1fr;
+grid-template-rows: repeat(2, 1fr);
+grid-column-gap: 0px;
+grid-row-gap: 0px;
+}
+
+.oben { grid-area: 1 / 1 / 2 / 2;
+ text-align: center;
+ }
+ /* Video angaben*/
+ .videoextern {
+    background-color: #282E33;
+    position: center;
+    top: 0;
+    left: 0;
+    width: 60vw;
+    height: 60vh;
+
+
+
+
+}
+
+/*Videoangaben END*/
+
+}
+.unten { grid-area: 2 / 1 / 3 / 2;
+  text-align: center;
+ }
+
+/*Foooter Links*/
+ .grid-container {
+ display: grid;
+ position: center;
+ grid-template-columns: 1fr 1fr 1fr;
+ grid-template-rows: 1fr;
+ grid-template-areas: ". .";
+ max-width: 100vw;
+ }
+
+.boxa{
+  text-align: left;
+  color: #f2f2f2;
+}
+
+.boxb{
+text-align: center
+}
+a {
+  color: inherit; }
+
+.boxc{
+text-align: right;
+}
+
+/*Footer Links END*/
+
+/*Kontaktformular*/
+.container {
+  font-family: "Roboto", Helvetica, Arial, sans-serif;
+  font-weight: 100;
+  font-size: 12px;
+  line-height: 30px;
+  color: black;
+  background: #282E33;
+}
+
+.container {
+  max-width: 400px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+#contact input[type="text"],
+#contact input[type="email"],
+#contact input[type="tel"],
+#contact input[type="url"],
+#contact textarea,
+#contact button[type="submit"] {
+  font: 400 12px/16px "Roboto", Helvetica, Arial, sans-serif;
+}
+
+#contact {
+  background: #F9F9F9;
+  padding: 25px;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+
+#contact h3 {
+  display: block;
+  font-size: 30px;
+  font-weight: 300;
+  margin-bottom: 10px;
+}
+
+#contact h4 {
+  margin: 5px 0 15px;
+  display: block;
+  font-size: 13px;
+  font-weight: 400;
+}
+
+fieldset {
+  border: medium none !important;
+  margin: 0 0 10px;
+  min-width: 100%;
+  padding: 0;
+  width: 100%;
+}
+
+#contact input[type="text"],
+#contact input[type="email"],
+#contact input[type="tel"],
+#contact input[type="url"],
+#contact textarea {
+  width: 100%;
+  border: 1px solid #ccc;
+  background: #FFF;
+  margin: 0 0 5px;
+  padding: 10px;
+}
+
+#contact input[type="text"]:hover,
+#contact input[type="email"]:hover,
+#contact input[type="tel"]:hover,
+#contact input[type="url"]:hover,
+#contact textarea:hover {
+  -webkit-transition: border-color 0.3s ease-in-out;
+  -moz-transition: border-color 0.3s ease-in-out;
+  transition: border-color 0.3s ease-in-out;
+  border: 1px solid #aaa;
+}
+
+#contact textarea {
+  height: 100px;
+  max-width: 100%;
+  resize: none;
+}
+
+#contact button[type="submit"] {
+  cursor: pointer;
+  width: 100%;
+  border: none;
+  background: #4CAF50;
+  color: #FFF;
+  margin: 0 0 5px;
+  padding: 10px;
+  font-size: 15px;
+}
+
+#contact button[type="submit"]:hover {
+  background: #43A047;
+  -webkit-transition: background 0.3s ease-in-out;
+  -moz-transition: background 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out;
+}
+
+#contact button[type="submit"]:active {
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+.copyright {
+  text-align: left;
+}
+
+#contact input:focus,
+#contact textarea:focus {
+  outline: 0;
+  border: 1px solid #aaa;
+}
+
+::-webkit-input-placeholder {
+  color: #888;
+}
+
+:-moz-placeholder {
+  color: #888;
+}
+
+::-moz-placeholder {
+  color: #888;
+}
+
+:-ms-input-placeholder {
+  color: #888;
+}
+/*Kontaktformular ENDE*/
