@@ -229,7 +229,7 @@ body, html {
 /*parallax*/
 .parallax1 {
   /* Bild im Hintergrund */
-  background-image: url('parallax5.jpg');
+  background-image: url('1.jpg');
 
   /* Größe des Bilds */
   height: 100%;
@@ -244,7 +244,7 @@ body, html {
 
 .parallax3 {
   /* Bild im Hintergrund */
-  background-image: url('parallax7.jpg');
+  background-image: url('2.jpg');
 
   /* Größe des Bilds */
   height: 50%;
@@ -259,7 +259,7 @@ body, html {
 
 .parallax2 {
   /* Bild im Hintergrund */
-    background-image: url('parallax8.jpg');
+    background-image: url('3.jpg');
 
   /* Größe des Bildes */
   height: 90vh;
